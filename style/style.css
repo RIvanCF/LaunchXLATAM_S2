@@ -1,0 +1,31 @@
+body{
+    font-family: 'Century Gothic';
+    background-color: whitesmoke;
+}
+/*Configuracion de la barra de navegacion*/
+a{
+    text-decoration: none; /*Sin subrayado*/
+    color:#004AAD;
+}
+header{
+    background-color: blue;
+    align-items: center;
+    padding: 50px;
+    display: inline-block;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 150px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+nav a:hover{
+    color: red;
+}
+
