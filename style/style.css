@@ -1,31 +1,114 @@
+/*Configuración general*/
+*{
+    margin: o;
+    box-sizing: border-box;
+}
 body{
-    font-family: 'Century Gothic';
+    font-family: sans-serif;
     background-color: whitesmoke;
+    padding: 90px 200px 0px;
 }
 /*Configuracion de la barra de navegacion*/
-a{
-    text-decoration: none; /*Sin subrayado*/
-    color:#004AAD;
+.header{
+    background-color: whitesmoke;
+    height: 120px;
+    position: fixed; /*Fijar la posicion del navegador*/
+    width: 100%;
+    top: 0; /*ocupa todo el espacio en la pagina sin ningun desacople en la barra de navegacion*/
+    left: 0;
 }
-header{
-    background-color: blue;
-    align-items: center;
-    padding: 50px;
-    display: inline-block;
-}
-.logo{
+/*Configurar el contenido de la barra de navegacion (version escritorio)*/
+.navegador{
     display: flex;
-    align-items: center;
+    justify-content: space-between; /*El logo y el texto quedan espaciados */
+    max-width: 992px;
+    margin: 0 auto;
 }
-.logo img{
-    height: 150px;
-    margin-right: 10px;
+.link{
+    color: #004AAD;
+    text-decoration: none;
 }
-nav a{
-    font-weight: 600;
-    padding-right: 30px;
+/*Configuración del logo*/
+.logo{
+    align-items: center; /*Centrado verticalmente*/
+    display: flex;
+    height: 120px;
+    padding: 0 40px; /*Separacion de 40 pixeles a la izquierda*/
 }
-nav a:hover{
-    color: red;
+/*Configuración del texto del navegador*/
+.nav-menu{
+    display: flex; /*Orientación horizontal*/
+    margin-right: 40px; /*Separacion de 40 pixeles a la derecha*/
+    list-style: none;
+    align-items: center /*Centrado verticalmente*/;
 }
+.item{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 20px;
+    width: max-content; /*No cortar el contenido aunque la pantalla se vea reducida*/
 
+}
+.link:hover{
+    color: gray;
+}
+/*Configuracion del icono de hamburguesa*/
+.toggle{
+    color: #004AAD;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+/*Configuracion para la version movil*/
+@media(max-width: 768px){
+    body{
+        padding: 90px 200px 0px;
+    }
+   .header{
+        height: 70px;
+    }
+    .link{
+        color:#004AAD
+    }
+    /*Configuración del logo*/
+    .logo{
+        height: 70px;
+        padding: 0 20px; /*Separacion de 20 pixeles (version movil)*/
+    }
+    /*Configuración del texto del navegador*/
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px; /*Separacion de 20 pixeles (version movil)*/
+        background-color:whitesmoke;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%);
+    }
+.item{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 20px;
+    width: max-content; /*No cortar el contenido aunque la pantalla se vea reducida*/
+
+}
+.link:hover{
+    color: grey;
+}
+/*Configuracion del icono de hamburguesa*/
+.toggle{
+    color: #004AAD;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+} 
+}
