@@ -21,12 +21,14 @@ body{
 .navegador{
     display: flex;
     justify-content: space-between; /*El logo y el texto quedan espaciados */
-    max-width: 992px;
+    max-width: 992px; /*Breakpoint*/
     margin: 0 auto;
 }
 .link{
     color: #004AAD;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
 }
 /*Configuración del logo*/
 .logo{
@@ -40,7 +42,7 @@ body{
     display: flex; /*Orientación horizontal*/
     margin-right: 40px; /*Separacion de 40 pixeles a la derecha*/
     list-style: none;
-    align-items: center /*Centrado verticalmente*/;
+    align-items: center;/*Centrado verticalmente*/
 }
 .item{
     font-size: 14px;
@@ -50,7 +52,9 @@ body{
 
 }
 .link:hover{
-    color: gray;
+    background-color:#004AAD;
+    color: whitesmoke;
+    transition: 1s;
 }
 /*Configuracion del icono de hamburguesa*/
 .toggle{
@@ -62,53 +66,52 @@ body{
     line-height: 60px;
     display: none;
 }
+
 /*Configuracion para la version movil*/
-@media(max-width: 768px){
+@media(max-width: 768px){ /*Breakpoint para dispositivo movil*/
     body{
-        padding: 90px 200px 0px;
+        padding: 80px 20px 0px;
     }
    .header{
-        height: 70px;
-    }
-    .link{
-        color:#004AAD
+        background-color: whitesmoke;
+        height: 80px;
     }
     /*Configuración del logo*/
     .logo{
-        height: 70px;
-        padding: 0 20px; /*Separacion de 20 pixeles (version movil)*/
+        height: 80px;
     }
     /*Configuración del texto del navegador*/
     .nav-menu{
         flex-direction: column;
-        align-items: center;
-        margin-right: 20px; /*Separacion de 20 pixeles (version movil)*/
-        background-color:whitesmoke;
+        margin: 0px; /*No tendra margen de separacion superior e inferior*/
+        background-color: whitesmoke;
         position: fixed;
         left: 0;
-        top: 50px;
+        top: 80px;
         width: 100%;
-        padding: 20px 0;
-        height: calc(100%);
+        padding: 20px 0px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%; /*Desplaza el menu de la pantalla al 100%*/
+        transition: left 0.3s;
     }
-.item{
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 0 20px;
-    width: max-content; /*No cortar el contenido aunque la pantalla se vea reducida*/
-
-}
-.link:hover{
-    color: grey;
-}
-/*Configuracion del icono de hamburguesa*/
-.toggle{
-    color: #004AAD;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    display: none;
-} 
+    /*Configuracion de los items y texto del navegador (version movil)*/
+    .item{
+        line-height: 60px;
+    }
+    .link{
+        padding: 8px 100px;
+        border-radius: 3px;
+    }
+    /*Configuracion de la animacion del menu en version movil*/
+    .link:hover{
+        background-color: #004AAD;
+        color: whitesmoke;
+        transition: 0.5s;
+    }
+    /*Configuracion del icono de hamburguesa*/
+    .toggle{
+       display: block; 
+    } 
+    /*Configuración de la activacion del menu con el toggle*/
 }
