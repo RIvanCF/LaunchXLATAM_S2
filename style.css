@@ -6,7 +6,7 @@
 body{
     font-family: sans-serif;
     background-color: whitesmoke;
-    padding: 90px 200px 0px;
+    padding: 130px 200px 0px;
 }
 /*Configuracion de la barra de navegacion*/
 .header{
@@ -118,4 +118,43 @@ body{
     .visible{
         left: 0;  
     }
+}
+/*////////////////////////////////////////////////////////*/
+/*Configuración del carrusel de imagenes*/
+.slider{
+    width: 75%; /*Abarcará un ancho del 75%*/
+    overflow: hidden;
+    display: block;/*Al tratarse de una imagen, esta debe considerarse como un bloque*/
+    margin: auto;/*Centrado*/
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 30s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+/*Desplazamiento de imagenes*/
+@keyframes cambio{
+    0% {margin-left: 0;}
+    21.25% {margin-left: 0;}
+
+    26.25% {margin-left: -100%;}
+    47.50% {margin-left: -100%;}
+
+    52.50% {margin-left: -200%;}
+    73.75% {margin-left: -200%;}
+
+    78.75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+hr{
+    height: 2px;
+    background: #004AAD;
 }
