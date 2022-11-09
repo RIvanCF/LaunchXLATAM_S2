@@ -65,6 +65,7 @@ body{
     padding: 0 20px;
     line-height: 60px;
     display: none;
+    cursor: pointer;
 }
 
 /*Configuracion para la version movil*/
@@ -90,9 +91,9 @@ body{
         top: 80px;
         width: 100%;
         padding: 20px 0px;
-        height: calc(100% - 60px);
-        overflow-y: auto;
-        left: 100%; /*Desplaza el menu de la pantalla al 100%*/
+        height: calc(100% - 80px);
+        overflow-y: auto;/*En caso de que el dispositivo sea mas pequeño o la ventana se vea reducida, este comando permite ue el menu sea manipulable aun con la ventana reducida*/
+        left: 100%; /*Desplaza el menu de la pantalla al 100% a la derecha*/
         transition: left 0.3s;
     }
     /*Configuracion de los items y texto del navegador (version movil)*/
@@ -114,4 +115,7 @@ body{
        display: block; 
     } 
     /*Configuración de la activacion del menu con el toggle*/
+    .visible{
+        left: 0;  
+    }
 }
