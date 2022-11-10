@@ -157,4 +157,70 @@ body{
 hr{
     height: 2px;
     background: #004AAD;
+    
 }
+/*////////////////////////////////////////////////////////*/
+/*Configuración del píe de pagina*/
+.footer{
+    background-color: whitesmoke;
+    height: 120px;
+    width: 100%;
+}
+.nav-foot{
+    display: flex;
+    justify-content: space-between; /*El texto queda espaciado */
+    max-width: 992px; /*Breakpoint*/
+    margin: 0 auto;
+}
+.contacto{
+    align-items: center; /*Centrado verticalmente*/
+    height: 120px;
+    width: 30%;
+    border-style: double;
+    border-color:#004AAD;
+}
+/*Bloque de Politica, Facturacion, creditos del creador*/
+.Complement{
+    background-color: purple;
+    width: 50%;
+    height: 120px;
+}
+p{
+    background-color: blueviolet;
+    text-align:start;
+    color: #004AAD;
+    font-size: 10px;
+    margin: 0;
+}
+/*Configuracion de la seccion de Politica (Terminos y condiciones y aviso de privacidad)*/
+.item-foot{
+    font-size: 10px;
+}
+.link-foot{
+    background-color: aliceblue;
+    color: gray;
+    text-decoration: none;
+    padding: 0px 20px 0px 0px;
+    margin: none;
+}
+.Politica{
+    display: flex; /*Orientación horizontal*/
+    list-style: none;
+    list-style-type: none; padding: 0;
+    justify-content: start;
+}
+/*Configuracion de la seccion de redes sociales del creador*/
+.sociales{
+    
+    background-color: blueviolet;
+    display: flex; /*Orientación horizontal*/
+    list-style: none;
+    list-style-type: none; 
+    padding: 0;
+    justify-content:start;
+}
+.img_social{
+    align-items: center;
+}
+
+
