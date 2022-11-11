@@ -43,3 +43,5 @@ En caso de que te quede corto el ejercicio siguele con esto!
 <a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/style.css"><img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" title="CSS" alt="CSS" width="100" height="100"/></a>
 <a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/index.js"><img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScript" alt="JavaScript" width="100" height="100"/></a>
 </p>
+
+<h2>Imagenes</h2>
