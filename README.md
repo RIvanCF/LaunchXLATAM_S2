@@ -39,7 +39,7 @@ En caso de que te quede corto el ejercicio siguele con esto!
 
 <h2 align='center'>Tecnologías usadas en esta práctica</h2>
 <p align='center'>
-<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/3e8ea81e99071db662ffa1e1ff53ed803ebaeb1b/index.html"><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML" alt="HTML" width="100" height="40"/></a>
-<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/style.css"><img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" title="CSS" alt="CSS" width="100" height="40"/></a>
-<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/index.js"><img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScript" alt="JavaScript" width="100" height="40"/></a>
+<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/3e8ea81e99071db662ffa1e1ff53ed803ebaeb1b/index.html"><img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML" alt="HTML" width="100" height="100"/></a>
+<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/style.css"><img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" title="CSS" alt="CSS" width="100" height="100"/></a>
+<a href="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/index.js"><img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScript" alt="JavaScript" width="100" height="100"/></a>
 </p>
