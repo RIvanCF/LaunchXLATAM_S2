@@ -162,23 +162,154 @@ hr{
 /*////////////////////////////////////////////////////////*/
 /*Configuración del píe de pagina*/
 .footer{
-    background-color: yellow;
-    height: 120px;
+    height: 180px;
     width: 100%;
     color:#004AAD;
 }
+/*Acomodo y confirguracion de las columnas que conforma el pie de página*/
 .sup-foot{
-    background-color:black;
+    display:flex;
+    width: 100%;
 }
+/*///////////////////*/
 .cont-info{
-    background-color:greenyellow;
+    width: 40%;
+    margin: auto;
+    
 }
+.cont-info h1{
+    font-size: 18px;
+}
+.cont-info p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*///////////////////*/
 .cont-social{
-    background-color: blueviolet;
+    width: 25%;
+    margin: auto;
 }
+.cont-social h1{
+    font-size: 18px;
+}
+.cont-social .cont-icon{
+   margin-top: 5px; 
+   display: flex;
+}
+.cont-social .cont-icon img{
+    width: 20px;
+    height: 20px;
+}
+.cont-social .cont-icon label{
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+/*//////////////////////*/
 .cont-contact{
-    background-color: aqua;
+    width: 25%;
+    margin: auto;
 }
+.cont-contact h1{
+    font-size: 18px;
+}
+.cont-contact .cont-iconos{
+    margin-top: 5px;
+    display: flex;
+}
+.cont-contact .cont-iconos img{
+    width: 20px;
+    height: 20px;
+}
+.cont-contact .cont-iconos label{
+    font-size: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+/*///////////////////////*/
 .inferior-foot{
-    background-color: red;
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.inferior-foot .copyright p{
+    background-color: azure;
+    font-size: 10px;
+
+    
+}
+.inferior-foot .created a{
+    background-color: aliceblue;
+    font-size: 10px;
+    text-decoration: none;
+   
+}
+/*Configuracion para la version Movil*/
+@media(max-width: 768px){
+    .footer{
+        height: 120px;
+        width: 100%;
+        color:#004AAD;
+    }
+    /*Acomodo y confirguracion de las columnas que conforma el pie de página*/
+    .sup-foot{
+        display:flex;
+        width: 100%;
+    }
+    /*///////////////////*/
+    .cont-info{
+        width: 40%;
+        margin: auto;
+        
+    }
+    .cont-info h1{
+        display: none;
+    }
+    .cont-info p{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    /*///////////////////*/
+    .cont-social{
+        display: flex;
+        justify-content:center;
+    }
+    .cont-social h1{
+        display: none;
+    }
+    .cont-social .cont-icon img{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+    .cont-social .cont-icon label{
+        display: none;
+    }
+    /*//////////////////////*/
+    .cont-contact h1{
+        font-size: 16px;
+        display: none;
+    }
+    
+    .cont-contact .cont-iconos img{
+        width: 15px;
+        height: 15px;
+    }
+    .cont-contact .cont-iconos label{
+        font-size: 8px;
+        margin-top: 2px;
+    }
+    /*///////////////////////*/
+    .inferior-foot{
+        text-align: center;
+        margin: auto;
+    }
+    .inferior-foot .copyright p{
+        font-size: 8px;
+    }
+    .inferior-foot .created a{
+        font-size: 8px;
+        text-decoration: none;
+    }
 }
