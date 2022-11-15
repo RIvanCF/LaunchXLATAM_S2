@@ -313,3 +313,90 @@ hr{
         text-decoration: none;
     }
 }
+
+/*Sección de Configuración del menú*/ 
+.menu_principal{
+    background-color: whitesmoke;
+    color: #004AAD;
+    font-family: 'Calibri';
+    text-align: center;
+    padding-top: 20px;
+    height: 120px;
+    position: fixed; /*Fijar la posicion del navegador*/
+    width: 100%;
+    top: 0; /*ocupa todo el espacio en la pagina sin ningun desacople en la barra de navegacion*/
+    left: 0;
+}
+.menu_principal hr{
+    border: 0 ; 
+    border-top: 1px double blue; 
+    width: 69%;
+}
+.bizcocho{
+    font-size: 20px;
+    font-family: Calibri;
+    letter-spacing: 10px;
+    background-color: #004AAD;
+    color: whitesmoke;
+    text-align: center;
+}
+.cobertura{
+    font-size: 20px;
+    font-family: Calibri;
+    letter-spacing: 10px;
+    background-color: #004AAD;
+    color: whitesmoke;
+    text-align: center;
+}
+.toppings{
+    font-size: 20px;
+    font-family: Calibri;
+    letter-spacing: 10px;
+    background-color: #004AAD;
+    color: whitesmoke;
+    text-align: center;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor .tarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(0, 74, 173);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: whitesmoke;
+}
+.contenedor .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 74, 173);
+}
+.contenedor .tarjeta img{
+    width: 330px;
+    height: 220px;
+}
+.contenedor .tarjeta h4{
+    font-weight: 600;
+    letter-spacing: 5px;
+    color:rgb(0, 74, 173);
+}
+.contenedor .tarjeta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300px;
+}
+@media(max-width: 768px){ /*Breakpoint para dispositivo movil*/
+   .menu_principal{
+        font-size: 14px;
+        height: 80px;
+        padding-top: 4px;
+    }
