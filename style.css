@@ -332,7 +332,8 @@ hr{
     border-top: 1px double blue; 
     width: 69%;
 }
-.bizcocho{
+/*Configuración de las secciones del menu*/
+.test{
     font-size: 20px;
     font-family: Calibri;
     letter-spacing: 10px;
@@ -340,22 +341,7 @@ hr{
     color: whitesmoke;
     text-align: center;
 }
-.cobertura{
-    font-size: 20px;
-    font-family: Calibri;
-    letter-spacing: 10px;
-    background-color: #004AAD;
-    color: whitesmoke;
-    text-align: center;
-}
-.toppings{
-    font-size: 20px;
-    font-family: Calibri;
-    letter-spacing: 10px;
-    background-color: #004AAD;
-    color: whitesmoke;
-    text-align: center;
-}
+/*Configuración de los contenedores, texto e imagenes que conforma el menú*/
 .contenedor{
     width: 100%;
     max-width: 1200px;
@@ -394,9 +380,24 @@ hr{
     font-size: 16px;
     font-weight: 300px;
 }
+/*Version movil*/
 @media(max-width: 768px){ /*Breakpoint para dispositivo movil*/
    .menu_principal{
         font-size: 14px;
         height: 80px;
         padding-top: 4px;
     }
+}
+/*Configuracion del formalario para el pedido*/
+.cont-test{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+.cont-test .Datos input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px;
+    border-color: #004AAD;
+    
+}
