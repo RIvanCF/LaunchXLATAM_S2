@@ -11,9 +11,10 @@
     <!--Menu-->
     <header class="menu_principal">
             <h1>Nuestro Menú</h1>
+            <a href="#pedido" class="pedirlo">¡HAZ TU PEDIDO!</a>
     </header>
     <!--Variedad de Bizcochos-->
-    <h2 class="test">BIZCOCHOS</h2>
+    <h2 class="test" id="sabor">BIZCOCHOS</h2>
     <div class="contenedor">
         <div class="tarjeta">
             <img src="./images/Sabores/chocolate.jpg" alt="chocolate">
@@ -84,12 +85,55 @@
             <p>Acompaña a tu pastel con la pasión roja</p>
         </div>
     </div>
-    <h2 class="test">PEDIDOS</h2>
+    <!--Formulario-->
+    <h2 class="test" id="pedido">PEDIDOS</h2>
     <div class="cont-test">
+        <!--Ingresar Datos-->
         <div class="Datos">
             <input type="text" name="Nombre" id="Nombre" placeholder="NOMBRE"><br><br>
+            <hr>
             <input type="tel" id="telefono" name="telefono" placeholder="TELEFONO" maxlength="10"><br><br>
+            <hr>
             <input type="email" id="Correo" name="Correo" placeholder="E-MAIL"><br><br>
-        </div>    
-    </div>
+            <hr>
+            <br>
+        </div>
+        <!--Personalizacion-->
+        <div class="contenido-test">
+            <div class="personalizar">
+                <label for="pan">BIZCOCHO</label><br>
+                <select name="pan" id="pan">
+                    <option value="seleccion">SELECCIONA UNA OPCIÓN</option>
+                    <option value="chocolate">CHOCOLATE</option>
+                    <option value="marmoleado">MARMOLEADO</option>
+                    <option value="naranja">NARANJA</option>
+                    <option value="redvelvet">REDVELVET</option>
+                    <option value="rumchata">RUMCHATA</option>
+                    <option value="vainilla">VAINILLA</option>
+                </select><br><br>
+                <label for="cobertura">COBERTURA</label><br>
+                <select name="cobertura" id="cobertura">
+                    <option value="chantilly">CHANTILLY</option>
+                    <option value="fondant">FONDANT</option>
+                    <option value="ganache">GANACHE</option>
+                </select><br><br>
+                <label for="toppings">TOPPINGS</label><br>
+                <select name="toppings" id="toppings">
+                    <option value="choco">MIX DE CHOCOLATE</option>
+                    <option value="frutos">FRUTOS ROJOS</option>
+                    <option value="cokkies">GALLETAS</option>
+                </select><br><br>
+            </div>
+            <!--Cantidad y fecha-->
+            <div class="pedir">
+                <label for="cantidad">CANTIDAD</label><br>
+                <input type="number" id="cantidad" name="cantidad"><br><br>
+                <label for="fecha1">FECHA DE ENTREGA:</label><br>
+                <input type="date" name="fecha1" id="fecha1">
+            </div>    
+        </div>
+    </div>  
+    <button class="slide_from_left">REALIZAR EL PEDIDO</button>
+    <a href="./index.html"><button class="slide_from_left">INICIO</button></a>
+    <a href="#sabor"><button class="slide_from_left">SABORES</button></a>
 </body>

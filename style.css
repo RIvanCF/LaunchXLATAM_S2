@@ -397,7 +397,89 @@ hr{
 .cont-test .Datos input{
     width: 100%;
     border: none;
-    border-bottom: 2px;
+}
+.cont-test .Datos hr{
+    margin-top: -10px;
+    background-color: #004AAD;
+    border: 2px;
+}
+.cont-test .personalizar{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.cont-test .pedir{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.cont-test .personalizar label{
+    font-size: 14px;
+    color:grey;
+}
+.cont-test .personalizar select{
+    background-color: whitesmoke;
     border-color: #004AAD;
-    
+    color:#004AAD;
+    padding: 10px;
+    width: 80%;
+}
+.cont-test .pedir label{
+    font-size: 14px;
+    color: gray;
+}
+.cont-test .pedir input{
+    background-color: whitesmoke;
+    border-color: #004AAD;
+    color: #004AAD;
+    padding: 10px;
+    width: 80%;
+}
+.contenido-test{
+    display: flex;
+}
+button {
+    font-size: 14px;
+    background:#004AAD;
+    color: #fff;
+    border: 0.25rem solid #004AAD;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position:relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: -20px;
+  }
+  button:hover {
+    color:#004AAD;
+  }
+  button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+}
+button[class^="slide"]::after {
+  transition: all 0.35s;
+}
+button[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+button.slide_from_left::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+.pedirlo{
+    font-size: 16;
+    text-decoration: none;
+    color: #004AAD;
 }
