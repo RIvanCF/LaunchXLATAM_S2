@@ -60,8 +60,10 @@ La practica contiene las siguientes funciones:
 </p>
 
 <h2 align='center'>Links del proyecto</h2>
-<a href="https://rivancf.github.io/LaunchXLATAM_S2/index.html"><img src="https://img.shields.io/badge/Practica%20HTML-GitHub%20Pages-blue"></a><br>
-<a href="https://bright-puffpuff-95a437.netlify.app/index.html"><img src="https://img.shields.io/badge/Practica%20HTML-Netlify-blue"></a>
+<p align='center'>
+<a href="https://rivancf.github.io/LaunchXLATAM_S2/index.html"><img src="https://img.shields.io/badge/Practica%20HTML-GitHub%20Pages-blue" height="30"></a><br>
+<a href="https://bright-puffpuff-95a437.netlify.app/index.html"><img src="https://img.shields.io/badge/Practica%20HTML-Netlify-blue" height="30"></a>
+</p>
 
 <h2 align='center'>Tecnologías usadas en esta práctica</h2>
 <p align='center'>
