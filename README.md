@@ -53,7 +53,7 @@ La practica contiene las siguientes funciones:
 <img src="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/images/github-pages-examples.png" title="GitHubPages" width="100" height="100">
 
 <h2 align='center'>Capturas</h2>
-<h3 align='center'>Version Desktop y Movile</h3>
+<h3 align='center'>Version Desktop y Mobile</h3>
 <p align='center'>
 <img src="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/images/Capturas/Captura_1.png" height="300">
 <img src="https://github.com/RIvanCF/LaunchXLATAM_S2/blob/main/images/Capturas/Captura_1_Responsive.png" height="300">
